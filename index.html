@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bright Candle Advertising | We Light The Ways</title>
+<meta name="description" content="Bright Candle Advertising — an out-of-home advertising agency in Dubai. Billboards, digital billboards, customized solutions and digital innovation across the UAE." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0c0e;
+  --bg-2:#121116;
+  --bg-3:#17151a;
+  --panel:#1b1820;
+  --gold:#bd9e5a;
+  --gold-soft:#d4bd82;
+  --gold-deep:#9a7d3e;
+  --cream:#ece4d3;
+  --cream-dim:#b9b1a3;
+  --line:rgba(189,158,90,.22);
+  --line-soft:rgba(236,228,211,.10);
+  --shadow:0 24px 60px -20px rgba(0,0,0,.7);
+  --maxw:1200px;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --display:'Cinzel',Georgia,serif;
+  --arabic:'Cairo',system-ui,sans-serif;
+  --hero-grad:radial-gradient(120% 90% at 50% -10%, rgba(189,158,90,.16), transparent 55%),radial-gradient(80% 60% at 80% 110%, rgba(154,125,62,.12), transparent 60%),linear-gradient(180deg,#0c0c0e 0%,#100f12 60%,#0a090c 100%);
+  --alt-grad:linear-gradient(180deg,#0e0d11,#100f13);
+  --footer-bg:#0a090c;
+  --header-bg:rgba(10,10,12,.82);
+  --menu-bg:rgba(9,9,11,.97);
+  --card-soft:rgba(255,255,255,.02);
+  --img-scrim:linear-gradient(180deg,rgba(12,12,14,.15) 0%,rgba(12,12,14,.55) 60%,rgba(12,12,14,.95) 100%),linear-gradient(120deg,rgba(189,158,90,.22),transparent 60%);
+  --badge-bg:rgba(10,10,12,.55);
+  --field-bg:rgba(255,255,255,.03);
+  --btn-grad:linear-gradient(135deg,#b1893f,#7e6228);
+  --btn-text:#fff6e6;
+}
+/* ---------- LIGHT THEME ---------- */
+html[data-theme="light"]{
+  --bg:#f7f2e8;
+  --bg-2:#f1ebdd;
+  --bg-3:#ece4d2;
+  --panel:#ffffff;
+  --gold:#9a7b34;
+  --gold-soft:#b8923f;
+  --gold-deep:#7c6225;
+  --cream:#211d15;
+  --cream-dim:#5f584a;
+  --line:rgba(154,123,52,.32);
+  --line-soft:rgba(33,29,21,.12);
+  --shadow:0 24px 60px -24px rgba(120,100,50,.30);
+  --hero-grad:radial-gradient(120% 90% at 50% -10%, rgba(189,158,90,.30), transparent 55%),radial-gradient(80% 60% at 80% 110%, rgba(154,125,62,.18), transparent 60%),linear-gradient(180deg,#fbf7ee 0%,#f5efe2 60%,#efe7d6 100%);
+  --alt-grad:linear-gradient(180deg,#f1ebdd,#ece5d4);
+  --footer-bg:#ece4d2;
+  --header-bg:rgba(247,242,232,.86);
+  --menu-bg:rgba(247,242,232,.98);
+  --card-soft:rgba(154,123,52,.04);
+  --img-scrim:linear-gradient(180deg,rgba(40,33,18,.05) 0%,rgba(40,33,18,.18) 60%,rgba(40,33,18,.42) 100%),linear-gradient(120deg,rgba(189,158,90,.20),transparent 60%);
+  --badge-bg:rgba(255,251,243,.82);
+  --field-bg:rgba(33,29,21,.03);
+  --btn-grad:linear-gradient(135deg,#9a7b34,#6f571f);
+  --btn-text:#fff8ec;
+}
+html[data-theme="light"] .grain{mix-blend-mode:multiply;opacity:.03}
+html[data-theme="light"] .brand img,html[data-theme="light"] .foot-brand img{filter:drop-shadow(0 1px 1px rgba(120,100,50,.25))}
+/* slightly heavier, darker body text in light mode for clarity */
+html[data-theme="light"]{--cream-dim:#544d40}
+html[data-theme="light"] body{font-weight:500}
+html[data-theme="light"] .hero p.lede,
+html[data-theme="light"] .sec-head p,
+html[data-theme="light"] .about-text p,
+html[data-theme="light"] .value p,
+html[data-theme="light"] .svc-card p,
+html[data-theme="light"] .contact-card p,
+html[data-theme="light"] .cline .val,
+html[data-theme="light"] .stat span,
+html[data-theme="light"] .foot-bottom,
+html[data-theme="light"] .small-note,
+html[data-theme="light"] .field input,
+html[data-theme="light"] .field textarea{font-weight:600}
+html[data-theme="light"][data-lang="ar"] body{font-weight:500}
+html[data-theme="light"][data-lang="ar"] .hero p.lede,
+html[data-theme="light"][data-lang="ar"] .sec-head p,
+html[data-theme="light"][data-lang="ar"] .about-text p,
+html[data-theme="light"][data-lang="ar"] .value p,
+html[data-theme="light"][data-lang="ar"] .svc-card p,
+html[data-theme="light"][data-lang="ar"] .contact-card p,
+html[data-theme="light"][data-lang="ar"] .cline .val{font-weight:600}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--cream);
+  font-family:var(--serif);
+  font-size:18px;
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+/* ---------- Arabic / RTL ---------- */
+html[data-lang="ar"] body{font-family:var(--arabic);font-size:17px;line-height:1.9}
+html[data-lang="ar"] .display,
+html[data-lang="ar"] h1,html[data-lang="ar"] h2,html[data-lang="ar"] h3,
+html[data-lang="ar"] .nav-links a,html[data-lang="ar"] .logo-word,
+html[data-lang="ar"] .btn,html[data-lang="ar"] .eyebrow,
+html[data-lang="ar"] .svc-index{font-family:var(--arabic)!important;letter-spacing:0}
+html[data-lang="ar"] .eyebrow{letter-spacing:.12em}
+.ar-only{display:none}
+html[data-lang="ar"] .en-only{display:none}
+html[data-lang="ar"] .ar-only{display:inline}
+
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+section{position:relative}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+.display{font-family:var(--display)}
+.eyebrow{
+  font-family:var(--display);
+  font-size:.72rem;letter-spacing:.34em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;
+  display:inline-flex;align-items:center;gap:14px;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.7}
+.eyebrow.center{justify-content:center}
+.eyebrow.center::after{content:"";width:34px;height:1px;background:var(--gold);opacity:.7}
+
+/* ---------- Background atmosphere ---------- */
+.grain{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.045;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+/* ---------- Header ---------- */
+header{position:fixed;top:0;left:0;right:0;z-index:50;
+  transition:background .4s ease,backdrop-filter .4s ease,border-color .4s ease,padding .4s ease;
+  border-bottom:1px solid transparent;padding:18px 0}
+header.scrolled{background:var(--header-bg);backdrop-filter:blur(14px);border-bottom-color:var(--line-soft);padding:10px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:13px}
+.brand img{height:46px;width:auto;transition:height .4s ease}
+header.scrolled .brand img{height:38px}
+.logo-word{display:flex;flex-direction:column;line-height:1}
+.logo-word b{font-family:var(--display);font-weight:600;font-size:1.04rem;letter-spacing:.14em;color:var(--cream)}
+.logo-word span{font-family:var(--display);font-weight:500;font-size:.52rem;letter-spacing:.42em;color:var(--gold);margin-top:5px}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font-family:var(--display);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--cream-dim);
+  position:relative;padding:6px 0;transition:color .3s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--gold);transition:width .35s}
+.nav-links a:hover{color:var(--cream)}
+.nav-links a:hover::after{width:100%}
+.nav-right{display:flex;align-items:center;gap:18px}
+.theme-btn{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--gold);
+  cursor:pointer;display:grid;place-items:center;transition:all .3s;flex:none}
+.theme-btn:hover{background:var(--gold-deep);color:var(--btn-text);border-color:var(--gold-deep)}
+.theme-btn svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.6}
+.theme-btn .ic-moon{display:none}
+html[data-theme="light"] .theme-btn .ic-sun{display:none}
+html[data-theme="light"] .theme-btn .ic-moon{display:block}
+.lang-link{font-family:var(--display);font-size:.78rem;letter-spacing:.14em;color:var(--gold);
+  text-transform:uppercase;background:transparent;border:1px solid var(--line);border-radius:40px;
+  padding:8px 16px;min-height:40px;cursor:pointer;transition:all .3s}
+.lang-link:hover{background:var(--gold-deep);color:var(--btn-text);border-color:var(--gold-deep)}
+.nav-links .lang-link{margin-inline-start:6px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--display);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;
+  padding:14px 26px;min-height:46px;border-radius:40px;cursor:pointer;border:1px solid var(--gold);
+  transition:all .35s ease;background:transparent;color:var(--gold)}
+.btn.solid{background:var(--btn-grad);color:var(--btn-text);border-color:transparent;box-shadow:0 10px 30px -10px rgba(140,110,50,.45)}
+.btn.solid:hover{transform:translateY(-2px);box-shadow:0 16px 38px -10px rgba(189,158,90,.7)}
+.btn:not(.solid):hover{background:var(--gold-deep);color:var(--btn-text)}
+.hamburger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:10px;min-height:44px;min-width:44px}
+.hamburger span{width:24px;height:2px;background:var(--cream);transition:.3s;display:block}
+.hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ---------- Hero ---------- */
+.hero{min-height:100svh;display:flex;align-items:center;padding:140px 0 80px;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0;background:var(--hero-grad)}
+.hero-bg::after{content:"";position:absolute;inset:0;
+  background-image:linear-gradient(var(--line-soft) 1px,transparent 1px),linear-gradient(90deg,var(--line-soft) 1px,transparent 1px);
+  background-size:64px 64px;mask-image:radial-gradient(circle at 50% 40%,#000 0%,transparent 72%);opacity:.5}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;width:100%}
+.hero-copy{max-width:640px}
+.hero h1{font-family:var(--display);font-weight:600;line-height:1.04;margin:24px 0 22px;
+  font-size:clamp(2.7rem,6vw,5rem);color:var(--cream);letter-spacing:.01em}
+.hero h1 .em{display:block;background:linear-gradient(120deg,var(--gold-soft),var(--gold),var(--gold-deep));
+  -webkit-background-clip:text;background-clip:text;color:transparent;font-style:italic}
+html[data-lang="ar"] .hero h1 .em{font-style:normal}
+.hero p.lede{font-size:1.22rem;color:var(--cream-dim);max-width:520px;margin-bottom:34px}
+html[data-lang="ar"] .hero p.lede{font-size:1.06rem}
+.hero-cta{display:flex;gap:16px;flex-wrap:wrap}
+
+/* candle visual */
+.candle-stage{position:relative;display:flex;justify-content:center;align-items:center;min-height:420px}
+.candle-glow{position:absolute;width:340px;height:340px;border-radius:50%;
+  background:radial-gradient(circle,rgba(189,158,90,.32),rgba(189,158,90,.05) 55%,transparent 70%);
+  filter:blur(8px);animation:breathe 5s ease-in-out infinite}
+.candle-ring{position:absolute;width:300px;height:380px;border:1px solid var(--line);border-radius:50%;
+  box-shadow:inset 0 0 60px rgba(189,158,90,.08)}
+.candle-stage img{position:relative;z-index:2;width:300px;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+.flame-dot{position:absolute;top:18%;left:50%;transform:translateX(-50%);width:16px;height:24px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;
+  background:radial-gradient(circle at 50% 70%,#fff7e0,var(--gold) 60%,transparent);filter:blur(3px);z-index:3;animation:flicker 2.6s ease-in-out infinite}
+@keyframes breathe{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.08);opacity:1}}
+@keyframes flicker{0%,100%{transform:translateX(-50%) scaleY(1);opacity:.9}50%{transform:translateX(-52%) scaleY(1.12);opacity:1}}
+
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;
+  font-family:var(--display);font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cream-dim);
+  display:flex;flex-direction:column;align-items:center;gap:10px;opacity:.7}
+.scroll-hint i{width:1px;height:42px;background:linear-gradient(var(--gold),transparent);animation:drop 2s ease-in-out infinite}
+@keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* ---------- Section frame ---------- */
+.section{padding:110px 0;position:relative;z-index:2}
+.section.alt{background:var(--alt-grad)}
+.sec-head{max-width:720px;margin-bottom:60px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head h2{font-family:var(--display);font-weight:600;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;margin:18px 0;color:var(--cream)}
+.sec-head p{color:var(--cream-dim);font-size:1.16rem}
+html[data-lang="ar"] .sec-head p{font-size:1.02rem}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-text p{margin-bottom:20px;color:var(--cream-dim);font-size:1.14rem}
+html[data-theme="light"] .about-text p{color:#2e2920;font-weight:600}
+html[data-lang="ar"] .about-text p{font-size:1.02rem}
+.about-text .signature{font-family:var(--display);color:var(--gold);font-size:1.3rem;font-style:italic;margin-top:8px}
+html[data-lang="ar"] .about-text .signature{font-style:normal;font-weight:700}
+.about-visual{position:relative;border:1px solid var(--line);border-radius:4px;padding:46px;
+  background:linear-gradient(160deg,rgba(189,158,90,.07),rgba(255,255,255,.01));box-shadow:var(--shadow)}
+.about-visual::before,.about-visual::after{content:"";position:absolute;width:18px;height:18px;border:1px solid var(--gold)}
+.about-visual::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+.about-visual::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.about-visual img{margin:0 auto;width:78%}
+.about-tag{text-align:center;margin-top:24px;font-family:var(--display);letter-spacing:.2em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:70px}
+.stat{border-top:1px solid var(--line);padding-top:20px}
+.stat b{font-family:var(--display);display:block;font-size:1.9rem;color:var(--gold);font-weight:600;margin-bottom:6px}
+.stat span{font-size:.96rem;color:var(--cream-dim)}
+
+/* ---------- Services (image cards) ---------- */
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.svc-card{position:relative;border:1px solid var(--line-soft);border-radius:10px;overflow:hidden;
+  background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);
+  transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .5s,box-shadow .5s;display:flex;flex-direction:column}
+.svc-card:hover{transform:translateY(-8px);border-color:var(--line);box-shadow:0 30px 60px -28px rgba(0,0,0,.8)}
+.svc-img{position:relative;aspect-ratio:16/10;overflow:hidden}
+.svc-img img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1);filter:saturate(.9)}
+.svc-card:hover .svc-img img{transform:scale(1.07)}
+.svc-img::after{content:"";position:absolute;inset:0;background:var(--img-scrim);transition:opacity .5s}
+.svc-index{position:absolute;top:16px;z-index:2;inset-inline-start:18px;
+  font-family:var(--display);color:var(--gold);font-size:.9rem;font-weight:600;letter-spacing:.1em;
+  background:var(--badge-bg);backdrop-filter:blur(4px);border:1px solid var(--line);
+  width:42px;height:42px;border-radius:50%;display:grid;place-items:center}
+.svc-body{padding:30px 30px 34px;display:flex;flex-direction:column;gap:14px;flex:1}
+.svc-head-row{display:flex;align-items:center;gap:16px}
+.svc-ic{width:50px;height:50px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;flex:none}
+.svc-ic svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.4}
+.svc-card h3{font-family:var(--display);font-weight:600;font-size:1.45rem;color:var(--cream);line-height:1.2}
+html[data-lang="ar"] .svc-card h3{font-size:1.32rem}
+.svc-sub{font-family:var(--display);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:6px;display:block}
+.svc-card p{color:var(--cream-dim);font-size:1.02rem}
+html[data-lang="ar"] .svc-card p{font-size:.97rem}
+
+/* ---------- Why / values ---------- */
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.value{border:1px solid var(--line-soft);border-radius:6px;padding:38px 32px;background:linear-gradient(165deg,rgba(255,255,255,.02),transparent);
+  transition:transform .4s,border-color .4s,background .4s}
+.value:hover{transform:translateY(-6px);border-color:var(--line);background:linear-gradient(165deg,rgba(189,158,90,.08),transparent)}
+.value .vic{width:50px;height:50px;display:grid;place-items:center;border:1px solid var(--line);border-radius:14px;margin-bottom:22px}
+.value .vic svg{width:24px;height:24px;stroke:var(--gold);fill:none;stroke-width:1.4}
+.value h3{font-family:var(--display);font-weight:600;font-size:1.28rem;color:var(--cream);margin-bottom:12px}
+html[data-lang="ar"] .value h3{font-size:1.18rem}
+.value p{color:var(--cream-dim);font-size:1.02rem}
+
+/* ---------- Quote band ---------- */
+.quote-band{padding:90px 0;text-align:center;position:relative;overflow:hidden}
+#why{padding-bottom:58px}
+#contact{padding-top:66px}
+.quote-band .wrap{position:relative;z-index:2}
+.quote-band::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(60% 120% at 50% 50%,rgba(189,158,90,.12),transparent 60%)}
+.quote-band q{font-family:var(--display);font-style:italic;font-size:clamp(1.7rem,4vw,3rem);line-height:1.3;color:var(--cream);
+  display:block;max-width:900px;margin:0 auto;quotes:none}
+html[data-lang="ar"] .quote-band q{font-style:normal;font-weight:700}
+.quote-band q::before,.quote-band q::after{content:""}
+.quote-band .by{margin-top:26px;font-family:var(--display);letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;color:var(--gold)}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:stretch}
+.contact-info h3{font-family:var(--display);font-weight:600;font-size:1.7rem;margin-bottom:30px;color:var(--cream)}
+.cline{display:flex;align-items:flex-start;gap:18px;padding:22px 0;border-bottom:1px solid var(--line-soft)}
+.cline .ci{width:46px;height:46px;flex:none;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+.cline .ci svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.5}
+.cline .lbl{font-family:var(--display);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+.cline .val{font-size:1.16rem;color:var(--cream)}
+.cline a.val:hover{color:var(--gold)}
+.contact-card{border:1px solid var(--line);border-radius:8px;padding:46px;background:linear-gradient(160deg,rgba(189,158,90,.08),rgba(255,255,255,.01));
+  display:flex;flex-direction:column;justify-content:center;box-shadow:var(--shadow)}
+.contact-card .eyebrow{margin-bottom:18px}
+.contact-card h3{font-family:var(--display);font-weight:600;font-size:2rem;line-height:1.15;margin-bottom:16px;color:var(--cream)}
+.contact-card p{color:var(--cream-dim);margin-bottom:30px}
+.contact-card .btn{align-self:flex-start}
+html[data-lang="ar"] .contact-card .btn{align-self:flex-end}
+
+/* ---------- Footer ---------- */
+footer{padding:64px 0 40px;border-top:1px solid var(--line);background:var(--footer-bg);position:relative;z-index:2}
+.foot-top{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap;margin-bottom:40px}
+.foot-brand{display:flex;align-items:center;gap:14px}
+.foot-brand img{height:54px}
+.foot-tag{font-family:var(--display);font-style:italic;color:var(--gold);font-size:1.2rem}
+html[data-lang="ar"] .foot-tag{font-style:normal;font-weight:600}
+.foot-links{display:flex;gap:26px;flex-wrap:wrap}
+.foot-links a{font-family:var(--display);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cream-dim);transition:color .3s;display:inline-flex;align-items:center;min-height:44px}
+.foot-links a:hover{color:var(--gold)}
+.foot-bottom{border-top:1px solid var(--line-soft);padding-top:24px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-size:.86rem;color:var(--cream-dim)}
+
+/* ---------- Contact form ---------- */
+.contact-card form{display:flex;flex-direction:column;gap:16px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field label{font-family:var(--display);font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.field input,.field textarea{font-family:var(--serif);font-size:1.02rem;color:var(--cream);
+  background:var(--field-bg);border:1px solid var(--line-soft);border-radius:7px;padding:13px 15px;width:100%;
+  transition:border-color .3s,background .3s;min-height:48px}
+html[data-lang="ar"] .field input,html[data-lang="ar"] .field textarea{font-family:var(--arabic);font-size:.98rem}
+.field textarea{resize:vertical;min-height:110px;line-height:1.6}
+.field input::placeholder,.field textarea::placeholder{color:var(--cream-dim);opacity:.7}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold);background:var(--card-soft)}
+.field.invalid input,.field.invalid textarea{border-color:#d9534f}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-card form .btn{align-self:flex-start;margin-top:4px}
+html[data-lang="ar"] .contact-card form .btn{align-self:flex-end}
+.form-status{font-size:1rem;padding:12px 14px;border-radius:7px;display:none}
+.form-status.show{display:block}
+.form-status.ok{background:rgba(120,170,90,.14);border:1px solid rgba(120,170,90,.4);color:var(--cream)}
+.form-status.err{background:rgba(217,83,79,.12);border:1px solid rgba(217,83,79,.4);color:var(--cream)}
+.btn[disabled]{opacity:.6;cursor:not-allowed}
+.contact-card .small-note{font-size:.92rem;color:var(--cream-dim);margin-top:2px}
+.contact-card .small-note a{color:var(--gold);text-decoration:underline}
+
+/* ---------- WhatsApp float ---------- */
+.wa-float{position:fixed;bottom:24px;inset-inline-end:24px;z-index:60;display:flex;align-items:center;gap:0;
+  text-decoration:none;background:#25D366;color:#fff;border-radius:40px;padding:0;height:60px;width:60px;
+  box-shadow:0 12px 30px -8px rgba(37,211,102,.55);transition:width .4s cubic-bezier(.2,.7,.2,1),box-shadow .3s;
+  overflow:hidden;align-items:center}
+.wa-float .wa-ic{width:60px;height:60px;flex:none;display:grid;place-items:center}
+.wa-float .wa-ic svg{width:30px;height:30px;fill:#fff}
+.wa-float .wa-label{white-space:nowrap;font-family:var(--display);font-size:.82rem;letter-spacing:.04em;
+  padding-inline-end:22px;opacity:0;transition:opacity .3s}
+html[data-lang="ar"] .wa-float .wa-label{font-family:var(--arabic)}
+.wa-float:hover{width:auto;box-shadow:0 16px 38px -8px rgba(37,211,102,.7)}
+.wa-float:hover .wa-label{opacity:1}
+.wa-pulse{position:absolute;inset:0;border-radius:40px;box-shadow:0 0 0 0 rgba(37,211,102,.5);animation:wapulse 2.4s ease-out infinite;pointer-events:none}
+@keyframes wapulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.5)}70%{box-shadow:0 0 0 16px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* mobile menu language button sizing */
+.mobile-menu .lang-link{font-size:1.1rem;letter-spacing:.08em;padding:12px 26px;min-height:48px}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- Mobile menu panel ---------- */
+.mobile-menu{position:fixed;inset:0;z-index:45;background:var(--menu-bg);backdrop-filter:blur(8px);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:8px;
+  opacity:0;visibility:hidden;transition:opacity .4s;padding:40px}
+.mobile-menu.open{opacity:1;visibility:visible}
+.mobile-menu a{font-family:var(--display);font-size:1.5rem;letter-spacing:.1em;text-transform:uppercase;color:var(--cream);padding:14px}
+html[data-lang="ar"] .mobile-menu a{font-family:var(--arabic)}
+.mobile-menu a:hover{color:var(--gold)}
+
+/* ---------- Responsive ---------- */
+@media(max-width:980px){
+  .hero .wrap{grid-template-columns:1fr;gap:30px}
+  .candle-stage{min-height:300px;order:-1}
+  .candle-stage img{width:220px}
+  .candle-glow{width:260px;height:260px}.candle-ring{width:220px;height:280px}
+  .about-grid{grid-template-columns:1fr;gap:40px}
+  .about-visual{order:-1}
+  .stats{grid-template-columns:repeat(2,1fr);gap:28px}
+  .values{grid-template-columns:1fr;gap:18px}
+  .contact-grid{grid-template-columns:1fr;gap:34px}
+  .form-row{grid-template-columns:1fr}
+  .wa-float{bottom:18px;inset-inline-end:18px}
+  .nav-links,.nav-right .btn{display:none}
+  .hamburger{display:flex}
+  .svc-grid{grid-template-columns:1fr;gap:22px}
+  .svc-body{padding:24px 22px 28px}
+}
+@media(max-width:560px){
+  body{font-size:17px}
+  .wrap{padding:0 20px}
+  .section{padding:80px 0}
+  .hero{padding:120px 0 70px}
+  .hero-cta{flex-direction:column;align-items:stretch}
+  .hero-cta .btn{width:100%}
+  .stats{grid-template-columns:1fr 1fr;gap:20px}
+  .foot-top{flex-direction:column;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+</style>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header id="header">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Bright Candle Advertising">
+      <img src="bc.png" alt="Bright Candle Advertising logo" />
+      <span class="logo-word">
+        <b data-en="BRIGHT CANDLE" data-ar="BRIGHT CANDLE">BRIGHT CANDLE</b>
+        <span data-en="ADVERTISING" data-ar="ADVERTISING">ADVERTISING</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about" data-en="About" data-ar="من نحن">About</a>
+      <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+      <a href="#why" data-en="Why Us" data-ar="لماذا نحن">Why Us</a>
+      <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+      <button class="lang-link langToggle" aria-label="Switch language">
+        <span class="en-only">العربية</span><span class="ar-only">English</span>
+      </button>
+    </nav>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark or light mode">
+        <svg class="ic-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2 12h2.2M19.8 12H22M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="ic-moon" viewBox="0 0 24 24"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a href="#contact" class="btn solid" data-en="Get a Quote" data-ar="اطلب عرض سعر">Get a Quote</a>
+      <button class="hamburger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" data-en="About" data-ar="من نحن">About</a>
+  <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+  <a href="#why" data-en="Why Us" data-ar="لماذا نحن">Why Us</a>
+  <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+  <button class="lang-link langToggle" style="margin-top:8px" aria-label="Switch language">
+    <span class="en-only">العربية</span><span class="ar-only">English</span>
+  </button>
+  <a href="#contact" class="btn solid" style="margin-top:16px" data-en="Get a Quote" data-ar="اطلب عرض سعر">Get a Quote</a>
+</div>
+
+<span id="top"></span>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow" data-en="Out-of-Home Advertising · Dubai, UAE" data-ar="الإعلانات الخارجية · دبي، الإمارات">Out-of-Home Advertising · Dubai, UAE</span>
+      <h1>
+        <span data-en="Your brand," data-ar="علامتك التجارية،">Your brand,</span>
+        <span class="em" data-en="where it belongs." data-ar="حيث يجب أن تكون.">where it belongs.</span>
+      </h1>
+      <p class="lede" data-en="In a city that never stops moving, the brands that endure are the ones that shine on every corner. We put yours in front of the right people, at the right place, at the right time."
+         data-ar="في مدينةٍ لا تتوقف عن الحركة، تبقى العلامات التي تتألق في كل زاوية هي الأبقى. نضع علامتك أمام الأشخاص المناسبين، في المكان المناسب، وفي الوقت المناسب.">In a city that never stops moving, the brands that endure are the ones that shine on every corner. We put yours in front of the right people, at the right place, at the right time.</p>
+      <div class="hero-cta">
+        <a href="#services" class="btn solid" data-en="Explore Our Services" data-ar="اكتشف خدماتنا">Explore Our Services</a>
+        <a href="#about" class="btn" data-en="Who We Are" data-ar="من نحن">Who We Are</a>
+      </div>
+    </div>
+    <div class="candle-stage" aria-hidden="true">
+      <div class="candle-glow"></div>
+      <div class="candle-ring"></div>
+      <div class="flame-dot"></div>
+      <img src="UAEB.png" alt="" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section alt" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <span class="eyebrow" data-en="About Us" data-ar="من نحن">About Us</span>
+        <h2 class="display" style="font-size:clamp(2rem,4vw,3rem);margin:18px 0 26px;color:var(--cream)"
+            data-en="Built on the power of presence." data-ar="مبنيّون على قوّة الحضور.">Built on the power of presence.</h2>
+        <p data-en="Founded in the heart of Dubai, Bright Candle Advertising is an out-of-home advertising agency built on the power of presence. Together with our trusted partners, we command some of the most strategic outdoor advertising spaces across the UAE — from bustling city streets and major highways to high-footfall locations that define the urban landscape."
+           data-ar="تأسّست في قلب دبي، وبرايت كاندل للإعلان وكالة إعلانات خارجية مبنيّة على قوّة الحضور. ومع شركائنا الموثوقين، نمتلك بعضًا من أكثر المساحات الإعلانية الخارجية استراتيجيةً في الإمارات — من شوارع المدينة المزدحمة والطرق السريعة الكبرى إلى المواقع عالية الكثافة التي تُعرّف المشهد الحضري.">Founded in the heart of Dubai, Bright Candle Advertising is an out-of-home advertising agency built on the power of presence. Together with our trusted partners, we command some of the most strategic outdoor advertising spaces across the UAE — from bustling city streets and major highways to high-footfall locations that define the urban landscape.</p>
+        <p data-en="We and our partners bring together creative excellence, market intelligence, and an extensive network of outdoor media assets to craft campaigns that do not just capture attention — they leave a lasting impression on everyone who passes by."
+           data-ar="نجمع نحن وشركاؤنا بين التميّز الإبداعي وذكاء السوق وشبكة واسعة من أصول الإعلام الخارجي لصياغة حملات لا تكتفي بجذب الانتباه — بل تترك انطباعًا لا يُنسى لدى كل من يمرّ بها.">We and our partners bring together creative excellence, market intelligence, and an extensive network of outdoor media assets to craft campaigns that do not just capture attention — they leave a lasting impression on everyone who passes by.</p>
+        <p class="signature" data-en="Every way tells a story. We make sure yours is the one people remember."
+           data-ar="كل طريق يحكي قصة. ونحن نحرص أن تكون قصتك هي التي يتذكّرها الناس.">Every way tells a story. We make sure yours is the one people remember.</p>
+      </div>
+      <div class="about-visual reveal">
+        <img src="AB.png" alt="Bright Candle Advertising" />
+        <div class="about-tag" data-en="We Light The Ways" data-ar="نُنير الطريق">We Light The Ways</div>
+      </div>
+    </div>
+    <div class="stats">
+      <div class="stat reveal"><b data-en="Dubai" data-ar="دبي">Dubai</b><span data-en="Founded in the heart of the UAE" data-ar="تأسّست في قلب الإمارات">Founded in the heart of the UAE</span></div>
+      <div class="stat reveal"><b data-en="UAE-Wide" data-ar="كامل الإمارات">UAE-Wide</b><span data-en="Strategic outdoor media network" data-ar="شبكة إعلام خارجي استراتيجية">Strategic outdoor media network</span></div>
+      <div class="stat reveal"><b data-en="High-Footfall" data-ar="كثافة عالية">High-Footfall</b><span data-en="Prime, attention-commanding sites" data-ar="مواقع متميّزة تأسر الانتباه">Prime, attention-commanding sites</span></div>
+      <div class="stat reveal"><b data-en="Lasting" data-ar="أثر باقٍ">Lasting</b><span data-en="Impressions that people remember" data-ar="انطباعات يتذكّرها الناس">Impressions that people remember</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-en="What We Do" data-ar="ما نقدّمه">What We Do</span>
+      <h2 data-en="Services crafted to make your brand impossible to ignore."
+          data-ar="خدمات مصمّمة لتجعل علامتك مستحيلة التجاهل.">Services crafted to make your brand impossible to ignore.</h2>
+      <p data-en="From classic roadside presence to AI-driven digital experiences, every solution is engineered to put your message where it matters most."
+         data-ar="من الحضور التقليدي على الطرقات إلى التجارب الرقمية المدعومة بالذكاء الاصطناعي، كل حل مصمّم ليضع رسالتك حيث تُحدث أكبر أثر.">From classic roadside presence to AI-driven digital experiences, every solution is engineered to put your message where it matters most.</p>
+    </div>
+
+    <div class="svc-grid">
+      <!-- 1 -->
+      <article class="svc-card reveal">
+        <div class="svc-img">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1759256374877-2f513973282f?auto=format&fit=crop&w=1100&q=70" alt="Bright billboards lining a busy city street" />
+          <span class="svc-index">01</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-head-row">
+            <span class="svc-ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="11" rx="1"/><path d="M9 16v3M15 16v3M7 19h10"/></svg></span>
+            <div>
+              <h3 data-en="Billboards" data-ar="اللوحات الإعلانية">Billboards</h3>
+              <span class="svc-sub" data-en="Your Business Exposure" data-ar="حضور علامتك التجارية">Your Business Exposure</span>
+            </div>
+          </div>
+          <p data-en="Our traditional billboards offer prime locations across Dubai, strategically positioned to maximise exposure and engagement. Overlooking busy highways, iconic landmarks and high-traffic areas, they ensure your message reaches your audience effectively. From static displays to rotating billboards, our solutions amplify visibility and drive real consumer action — leaving a long-lasting impression."
+             data-ar="توفّر لوحاتنا الإعلانية التقليدية مواقع متميّزة في جميع أنحاء دبي، موزّعة استراتيجيًا لتحقيق أقصى ظهور وتفاعل. مُطلّةً على الطرق السريعة المزدحمة والمعالم الشهيرة والمناطق عالية الحركة، تضمن وصول رسالتك إلى جمهورك بفعالية. ومن العروض الثابتة إلى اللوحات الدوّارة، تُضاعف حلولنا الظهور وتحفّز الجمهور على التفاعل — تاركةً انطباعًا يدوم طويلًا.">Our traditional billboards offer prime locations across Dubai, strategically positioned to maximise exposure and engagement. Overlooking busy highways, iconic landmarks and high-traffic areas, they ensure your message reaches your audience effectively. From static displays to rotating billboards, our solutions amplify visibility and drive real consumer action — leaving a long-lasting impression.</p>
+        </div>
+      </article>
+      <!-- 2 -->
+      <article class="svc-card reveal">
+        <div class="svc-img">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1762417582194-7f0978f43fa0?auto=format&fit=crop&w=1100&q=70" alt="Bright digital billboards illuminating a city street at night" />
+          <span class="svc-index">02</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-head-row">
+            <span class="svc-ic"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="1"/><path d="M8 21h8M12 17v4M7 8l3 2-3 2M13 12h4"/></svg></span>
+            <div>
+              <h3 data-en="Digital Billboards" data-ar="اللوحات الرقمية">Digital Billboards</h3>
+              <span class="svc-sub" data-en="The Future of Advertising" data-ar="مستقبل الإعلان">The Future of Advertising</span>
+            </div>
+          </div>
+          <p data-en="Step into the future with state-of-the-art digital billboards — dynamic, eye-catching and infinitely customisable so your message stands out in Dubai's crowded urban landscape. Harness real-time updates and interactive content, with the flexibility to tailor campaigns by audience demographics, time of day and local events. Cutting-edge technology meets strategic creativity for measurable results."
+             data-ar="ادخل إلى المستقبل مع لوحات رقمية متطوّرة — ديناميكية وجذّابة وقابلة للتخصيص بلا حدود لتتميّز رسالتك في مشهد دبي الحضري المزدحم. استفد من التحديثات الفورية والمحتوى التفاعلي، مع مرونة تخصيص الحملات حسب الفئات الديموغرافية ووقت اليوم والفعاليات المحلية. تقنية متطوّرة تلتقي بإبداع استراتيجي لتحقيق نتائج قابلة للقياس.">Step into the future with state-of-the-art digital billboards — dynamic, eye-catching and infinitely customisable so your message stands out in Dubai's crowded urban landscape. Harness real-time updates and interactive content, with the flexibility to tailor campaigns by audience demographics, time of day and local events. Cutting-edge technology meets strategic creativity for measurable results.</p>
+        </div>
+      </article>
+      <!-- 3 -->
+      <article class="svc-card reveal">
+        <div class="svc-img">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1539035104074-dee66086b5e3?auto=format&fit=crop&w=1100&q=70" alt="Towering illuminated billboards seen from below" />
+          <span class="svc-index">03</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-head-row">
+            <span class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 16.5 7.1 18.1 8 12.6 4 8.7l5.5-.7L12 3z"/></svg></span>
+            <div>
+              <h3 data-en="Customized Solutions" data-ar="حلول مخصّصة">Customized Solutions</h3>
+              <span class="svc-sub" data-en="Target Your Objectives" data-ar="استهدف أهدافك">Target Your Objectives</span>
+            </div>
+          </div>
+          <p data-en="Every brand is unique, so we craft customised advertising solutions tailored to your specific marketing objectives — bespoke installations, innovative signage and experiential campaigns. From concept to execution, our team collaborates closely with you to design and implement ideas that resonate with target audiences and achieve your goals. The possibilities for your brand are endless."
+             data-ar="كل علامة تجارية فريدة، لذلك نصمّم حلولًا إعلانية مخصّصة تلبّي أهدافك التسويقية المحدّدة — تركيبات مبتكرة ولافتات إبداعية وحملات تجريبية. ومن الفكرة إلى التنفيذ، يعمل فريقنا معك عن قرب لتصميم وتنفيذ أفكار تلامس الجمهور المستهدف وتحقّق أهدافك. الإمكانات أمام علامتك لا حدود لها.">Every brand is unique, so we craft customised advertising solutions tailored to your specific marketing objectives — bespoke installations, innovative signage and experiential campaigns. From concept to execution, our team collaborates closely with you to design and implement ideas that resonate with target audiences and achieve your goals. The possibilities for your brand are endless.</p>
+        </div>
+      </article>
+      <!-- 4 -->
+      <article class="svc-card reveal">
+        <div class="svc-img">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1741795990628-7ec99d7d2044?auto=format&fit=crop&w=1100&q=70" alt="Glowing futuristic digital network pattern" />
+          <span class="svc-index">04</span>
+        </div>
+        <div class="svc-body">
+          <div class="svc-head-row">
+            <span class="svc-ic"><svg viewBox="0 0 24 24"><path d="M12 2a6 6 0 0 0-3 11.2V16h6v-2.8A6 6 0 0 0 12 2zM9 19h6M10 22h4"/></svg></span>
+            <div>
+              <h3 data-en="Digital Innovation" data-ar="الابتكار الرقمي">Digital Innovation</h3>
+              <span class="svc-sub" data-en="Latest Innovations" data-ar="أحدث الابتكارات">Latest Innovations</span>
+            </div>
+          </div>
+          <p data-en="Explore the cutting-edge of outdoor advertising technology. From augmented-reality experiences to AI-driven targeting, we harness the latest innovations to deliver campaigns that resonate and produce measurable results. Our commitment to digital transformation runs across every service we offer — keeping your brand ahead of the curve in today's competitive marketplace."
+             data-ar="اكتشف أحدث تقنيات الإعلان الخارجي. من تجارب الواقع المعزّز إلى الاستهداف المدعوم بالذكاء الاصطناعي، نسخّر أحدث الابتكارات لتقديم حملات مؤثّرة بنتائج قابلة للقياس. التزامنا بالتحوّل الرقمي حاضر في كل خدمة نقدّمها — ليبقى علامتك في الصدارة ضمن سوق اليوم التنافسي.">Explore the cutting-edge of outdoor advertising technology. From augmented-reality experiences to AI-driven targeting, we harness the latest innovations to deliver campaigns that resonate and produce measurable results. Our commitment to digital transformation runs across every service we offer — keeping your brand ahead of the curve in today's competitive marketplace.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="section alt" id="why">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <span class="eyebrow center" data-en="Why Bright Candle" data-ar="لماذا برايت كاندل">Why Bright Candle</span>
+      <h2 data-en="Presence, intelligence and creativity — in one network."
+          data-ar="حضور وذكاء وإبداع — في شبكة واحدة.">Presence, intelligence and creativity — in one network.</h2>
+    </div>
+    <div class="values">
+      <div class="value reveal">
+        <div class="vic"><svg viewBox="0 0 24 24" stroke-width="1.4"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z" fill="none" stroke="currentColor"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+        <h3 data-en="Strategic Locations" data-ar="مواقع استراتيجية">Strategic Locations</h3>
+        <p data-en="We command some of the most strategic outdoor spaces across the UAE — major highways, city streets and high-footfall destinations that define the landscape."
+           data-ar="نمتلك بعضًا من أكثر المساحات الخارجية استراتيجيةً في الإمارات — طرق سريعة كبرى وشوارع مدينة ووجهات عالية الكثافة تُعرّف المشهد.">We command some of the most strategic outdoor spaces across the UAE — major highways, city streets and high-footfall destinations that define the landscape.</p>
+      </div>
+      <div class="value reveal">
+        <div class="vic"><svg viewBox="0 0 24 24" stroke-width="1.4"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" fill="none" stroke="currentColor"/><circle cx="12" cy="12" r="3.4"/></svg></div>
+        <h3 data-en="Creative Excellence" data-ar="تميّز إبداعي">Creative Excellence</h3>
+        <p data-en="Our campaigns don't just capture attention — they leave a lasting impression on everyone who passes by, turning every passing glance into a memory."
+           data-ar="حملاتنا لا تكتفي بجذب الانتباه — بل تترك انطباعًا باقيًا لدى كل من يمرّ بها، محوّلةً كل نظرة عابرة إلى ذكرى.">Our campaigns don't just capture attention — they leave a lasting impression on everyone who passes by, turning every passing glance into a memory.</p>
+      </div>
+      <div class="value reveal">
+        <div class="vic"><svg viewBox="0 0 24 24" stroke-width="1.4"><path d="M4 19V9M9 19V5M14 19v-7M19 19v-10" fill="none" stroke="currentColor" stroke-linecap="round"/></svg></div>
+        <h3 data-en="Market Intelligence" data-ar="ذكاء السوق">Market Intelligence</h3>
+        <p data-en="We pair creative craft with sharp market intelligence and an extensive media network, so your budget reaches the right people at exactly the right moment."
+           data-ar="نمزج الحرفية الإبداعية بذكاء سوقي دقيق وشبكة إعلامية واسعة، ليصل استثمارك إلى الأشخاص المناسبين في اللحظة المناسبة تمامًا.">We pair creative craft with sharp market intelligence and an extensive media network, so your budget reaches the right people at exactly the right moment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUOTE BAND ============ -->
+<section class="quote-band">
+  <div class="wrap">
+    <q data-en="Every way tells a story. We make sure yours is the one people remember."
+       data-ar="كل طريق يحكي قصة. ونحن نحرص أن تكون قصتك هي التي يتذكّرها الناس.">Every way tells a story. We make sure yours is the one people remember.</q>
+    <div class="by" data-en="Bright Candle Advertising — We Light The Ways" data-ar="برايت كاندل للإعلان — نُنير الطريق">Bright Candle Advertising — We Light The Ways</div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow" data-en="Get In Touch" data-ar="تواصل معنا">Get In Touch</span>
+      <h2 data-en="Let's light your way." data-ar="دعنا نُنير طريقك.">Let's light your way.</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="cline">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span>
+          <div>
+            <div class="lbl" data-en="Representative" data-ar="ممثّل الشركة">Representative</div>
+            <div class="val" data-en="Ms. Amal Ali Bin Masoud" data-ar="السيدة أمل علي بن مسعود">Ms. Amal Ali Bin Masoud</div>
+          </div>
+        </div>
+        <div class="cline">
+          <span class="ci"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M4 7l8 6 8-6"/></svg></span>
+          <div>
+            <div class="lbl" data-en="Email" data-ar="البريد الإلكتروني">Email</div>
+            <a class="val" href="mailto:brightcandle.ad@gmail.com">brightcandle.ad@gmail.com</a>
+          </div>
+        </div>
+        <div class="cline">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L20 13l1 4v2a2 2 0 0 1-2 2A16 16 0 0 1 3 7a2 2 0 0 1 2-3z"/></svg></span>
+          <div>
+            <div class="lbl" data-en="Phone" data-ar="الهاتف">Phone</div>
+            <a class="val" href="tel:+971555066602" dir="ltr">+971 55 506 6602</a>
+          </div>
+        </div>
+        <div class="cline">
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-5.2-7-11a7 7 0 0 1 14 0c0 5.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span>
+          <div>
+            <div class="lbl" data-en="Location" data-ar="الموقع">Location</div>
+            <div class="val" data-en="Dubai, United Arab Emirates" data-ar="دبي، الإمارات العربية المتحدة">Dubai, United Arab Emirates</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-card reveal">
+        <span class="eyebrow" data-en="Send an Inquiry" data-ar="أرسل استفسارك">Send an Inquiry</span>
+        <h3 data-en="Put your brand on every corner." data-ar="ضع علامتك في كل زاوية.">Put your brand on every corner.</h3>
+        <p data-en="Tell us about your campaign and we'll get back to you shortly."
+           data-ar="حدّثنا عن حملتك وسنعاود التواصل معك قريبًا.">Tell us about your campaign and we'll get back to you shortly.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label data-en="Full Name" data-ar="الاسم الكامل">Full Name</label>
+              <input type="text" name="name" required data-en-ph="Your name" data-ar-ph="اسمك" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label data-en="Phone" data-ar="رقم الهاتف">Phone</label>
+              <input type="tel" name="phone" data-en-ph="+971 .." data-ar-ph="+971 .." placeholder="+971 .." dir="ltr" />
+            </div>
+          </div>
+          <div class="field">
+            <label data-en="Email" data-ar="البريد الإلكتروني">Email</label>
+            <input type="email" name="email" required data-en-ph="you@company.com" data-ar-ph="you@company.com" placeholder="you@company.com" dir="ltr" />
+          </div>
+          <div class="field">
+            <label data-en="Your Message" data-ar="رسالتك">Your Message</label>
+            <textarea name="message" required data-en-ph="Tell us about your campaign, locations and timing.." data-ar-ph="حدّثنا عن حملتك والمواقع والتوقيت.." placeholder="Tell us about your campaign, locations and timing.."></textarea>
+          </div>
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_subject" value="New inquiry — Bright Candle Advertising website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <button type="submit" class="btn solid" id="formSubmit" data-en="Send Inquiry" data-ar="إرسال الاستفسار">Send Inquiry</button>
+          <div class="small-note"><span data-en="Prefer email? Write to " data-ar="تفضّل البريد؟ راسلنا على ">Prefer email? Write to </span><a href="mailto:brightcandle.ad@gmail.com">brightcandle.ad@gmail.com</a></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="UAEB.png" alt="Bright Candle Advertising" />
+        <span class="foot-tag" data-en="We light the ways." data-ar="نُنير الطريق.">We light the ways.</span>
+      </div>
+      <nav class="foot-links" aria-label="Footer">
+        <a href="#about" data-en="About" data-ar="من نحن">About</a>
+        <a href="#services" data-en="Services" data-ar="خدماتنا">Services</a>
+        <a href="#why" data-en="Why Us" data-ar="لماذا نحن">Why Us</a>
+        <a href="#contact" data-en="Contact" data-ar="تواصل معنا">Contact</a>
+      </nav>
+    </div>
+    <div class="foot-bottom">
+      <span data-en="© 2026 Bright Candle Advertising. All rights reserved." data-ar="© 2026 برايت كاندل للإعلان. جميع الحقوق محفوظة.">© 2026 Bright Candle Advertising. All rights reserved.</span>
+      <span data-en="Dubai · United Arab Emirates" data-ar="دبي · الإمارات العربية المتحدة">Dubai · United Arab Emirates</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a class="wa-float" href="https://wa.me/971555066602?text=Hello%20Bright%20Candle%20Advertising%2C%20I%27d%20like%20to%20enquire%20about%20your%20advertising%20spaces."
+   target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <span class="wa-pulse" aria-hidden="true"></span>
+  <span class="wa-ic" aria-hidden="true">
+    <svg viewBox="0 0 32 32"><path d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.7 5.5 2.1 7.9L.3 31.7l8-2.1c2.3 1.3 5 1.9 7.7 1.9 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.5c-2.5 0-4.9-.7-7-1.9l-.5-.3-4.7 1.2 1.3-4.6-.3-.5a12.9 12.9 0 0 1-2-6.9C2.8 8.7 8.7 2.9 16 2.9S29.1 8.7 29.1 16 23.3 28.9 16 28.9zm7.2-9.6c-.4-.2-2.3-1.1-2.7-1.3-.4-.1-.6-.2-.9.2-.3.4-1 1.3-1.2 1.5-.2.2-.4.3-.8.1-.4-.2-1.7-.6-3.2-2-1.2-1-2-2.3-2.2-2.7-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.7.1-.2 0-.5 0-.7-.1-.2-.9-2.1-1.2-2.9-.3-.8-.6-.7-.9-.7h-.7c-.2 0-.6.1-1 .5-.3.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.9c.2.3 2.6 4 6.3 5.6.9.4 1.6.6 2.1.8.9.3 1.7.2 2.3.1.7-.1 2.3-.9 2.6-1.8.3-.9.3-1.7.2-1.8 0-.2-.3-.3-.7-.5z"/></svg>
+  </span>
+  <span class="wa-label" data-en="Chat with us" data-ar="تحدّث معنا">Chat with us</span>
+</a>
+
+<script>
+(function(){
+  var html=document.documentElement;
+
+  /* ---- language ---- */
+  function setLang(lang){
+    html.setAttribute('data-lang',lang);
+    html.setAttribute('lang',lang);
+    html.setAttribute('dir',lang==='ar'?'rtl':'ltr');
+    document.querySelectorAll('[data-en]').forEach(function(el){
+      var t=el.getAttribute(lang==='ar'?'data-ar':'data-en');
+      if(t!==null) el.textContent=t;
+    });
+    document.querySelectorAll('[data-en-ph]').forEach(function(el){
+      var t=el.getAttribute(lang==='ar'?'data-ar-ph':'data-en-ph');
+      if(t!==null) el.setAttribute('placeholder',t);
+    });
+    try{localStorage.setItem('bc_lang',lang);}catch(e){}
+  }
+  var savedLang='en';
+  try{savedLang=localStorage.getItem('bc_lang')||'en';}catch(e){}
+  setLang(savedLang);
+  document.querySelectorAll('.langToggle').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      setLang(html.getAttribute('data-lang')==='ar'?'en':'ar');
+    });
+  });
+
+  /* ---- theme (dark / light) ---- */
+  function setTheme(theme){
+    if(theme==='light'){html.setAttribute('data-theme','light');}
+    else{html.removeAttribute('data-theme');}
+    try{localStorage.setItem('bc_theme',theme);}catch(e){}
+  }
+  var savedTheme='light';
+  try{savedTheme=localStorage.getItem('bc_theme')||'light';}catch(e){}
+  setTheme(savedTheme);
+  var themeBtn=document.getElementById('themeBtn');
+  if(themeBtn){themeBtn.addEventListener('click',function(){
+    setTheme(html.getAttribute('data-theme')==='light'?'dark':'light');
+  });}
+
+  /* ---- header scroll ---- */
+  var header=document.getElementById('header');
+  function onScroll(){header.classList.toggle('scrolled',window.scrollY>40);}
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  /* ---- mobile menu ---- */
+  var burger=document.getElementById('burger'),menu=document.getElementById('mobileMenu');
+  function toggleMenu(open){
+    burger.classList.toggle('open',open);menu.classList.toggle('open',open);
+    burger.setAttribute('aria-expanded',open?'true':'false');
+    document.body.style.overflow=open?'hidden':'';
+  }
+  burger.addEventListener('click',function(){toggleMenu(!menu.classList.contains('open'));});
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){toggleMenu(false);});});
+
+  /* ---- reveal on scroll ---- */
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+
+  /* ---- contact form (FormSubmit AJAX) ---- */
+  var form=document.getElementById('contactForm');
+  if(form){
+    var status=document.getElementById('formStatus'),
+        submitBtn=document.getElementById('formSubmit'),
+        ENDPOINT='https://formsubmit.co/ajax/brightcandle.ad@gmail.com';
+    var MSG={
+      sending:{en:'Sending your inquiry…',ar:'جارٍ إرسال استفسارك…'},
+      ok:{en:'Thank you! Your inquiry has been sent. We\u2019ll be in touch shortly.',ar:'شكرًا لك! تم إرسال استفسارك، وسنتواصل معك قريبًا.'},
+      err:{en:'Something went wrong. Please email us directly at brightcandle.ad@gmail.com.',ar:'حدث خطأ ما. يُرجى مراسلتنا مباشرةً على brightcandle.ad@gmail.com.'},
+      invalid:{en:'Please fill in your name, a valid email and a message.',ar:'يرجى إدخال اسمك وبريد إلكتروني صحيح ورسالتك.'}
+    };
+    function lang(){return html.getAttribute('data-lang')==='ar'?'ar':'en';}
+    function show(type,key){status.className='form-status show '+(type==='ok'?'ok':'err');status.textContent=MSG[key][lang()];}
+    function emailOk(v){return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);}
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      if(form._honey && form._honey.value){return;} /* spam bot */
+      var name=form.name.value.trim(),email=form.email.value.trim(),message=form.message.value.trim();
+      ['name','email','message'].forEach(function(f){form[f].parentElement.classList.remove('invalid');});
+      var bad=false;
+      if(!name){form.name.parentElement.classList.add('invalid');bad=true;}
+      if(!emailOk(email)){form.email.parentElement.classList.add('invalid');bad=true;}
+      if(!message){form.message.parentElement.classList.add('invalid');bad=true;}
+      if(bad){show('err','invalid');return;}
+
+      submitBtn.disabled=true;
+      status.className='form-status show ok';status.textContent=MSG.sending[lang()];
+
+      var data=new FormData(form);
+      fetch(ENDPOINT,{method:'POST',headers:{'Accept':'application/json'},body:data})
+        .then(function(r){return r.json();})
+        .then(function(res){
+          if(res && (res.success==='true'||res.success===true)){
+            show('ok','ok');form.reset();
+          }else{show('err','err');}
+        })
+        .catch(function(){show('err','err');})
+        .finally(function(){submitBtn.disabled=false;});
+    });
+  }
+})();
+</script>
+</body>
+</html>
